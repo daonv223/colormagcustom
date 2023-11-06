@@ -284,13 +284,23 @@ class ColorMag_Dynamic_CSS {
 		$primary_menu_background         = get_theme_mod( 'colormag_primary_menu_background', $primary_menu_background_default );
 		$parse_css                      .= colormag_parse_background_css( $primary_menu_background_default, $primary_menu_background, '#cm-primary-nav, .cm-layout-2 #cm-primary-nav' );
 
-		$primary_menu_top_border_color     = get_theme_mod( 'colormag_primary_menu_top_border_color', '#207daf' );
-		$primary_menu_top_border_color_css = array(
-			'#cm-primary-nav' => array(
-				'border-top-color' => esc_html( $primary_menu_top_border_color ),
-			),
-		);
-		$parse_css                        .= colormag_parse_css( '#207daf', $primary_menu_top_border_color, $primary_menu_top_border_color_css );
+		$daong_primary_menu_border_top_group_enable = get_theme_mod('daong_primary_menu_border_top_group_enable');
+		if (!$daong_primary_menu_border_top_group_enable) {
+			$daong_disable_top_border = array(
+				'#cm-primary-nav' => array(
+					'border-top' => 'none',
+				),
+			);
+			$parse_css .= colormag_parse_css('4px solid #207daf', 'none', $daong_disable_top_border);
+		} else {
+			$primary_menu_top_border_color     = get_theme_mod( 'colormag_primary_menu_top_border_color', '#207daf' );
+			$primary_menu_top_border_color_css = array(
+				'#cm-primary-nav' => array(
+					'border-top-color' => esc_html( $primary_menu_top_border_color ),
+				),
+			);
+			$parse_css                        .= colormag_parse_css( '#207daf', $primary_menu_top_border_color, $primary_menu_top_border_color_css );
+		}
 
 		$primary_menu_text_color     = get_theme_mod( 'colormag_primary_menu_text_color', '' );
 		$primary_menu_text_color_css = array(

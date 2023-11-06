@@ -82,6 +82,16 @@ class ColorMag_Customize_Primary_Menu_Options extends ColorMag_Customize_Base_Op
 			),
 
 			array(
+				'name'     => 'daong_primary_menu_border_top_group_enable',
+				'label'    => esc_html__( 'Border Top Enable', 'colormag' ),
+				'default'  => false,
+				'type'     => 'control',
+				'control'  => 'colormag-toggle',
+				'section'  => 'colormag_primary_menu_section',
+				'priority' => 45,
+			),
+
+			array(
 				'name'     => 'colormag_primary_menu_border_top_group',
 				'label'    => esc_html__( 'Border Top', 'colormag' ),
 				'default'  => '',
