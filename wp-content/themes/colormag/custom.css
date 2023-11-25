@@ -1,0 +1,9 @@
+.daong-slider-wrapper {
+    padding: 30px 0;
+    background-color: #d9e9f7;
+}
+
+.daong-slider-wrapper .daong-slider {
+    max-width: 1140px;
+    margin: 0 auto;
+}

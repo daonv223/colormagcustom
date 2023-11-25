@@ -77,6 +77,11 @@ if ( ! class_exists( 'ColorMag_Enqueue_Scripts' ) ) {
 			wp_enqueue_style( 'colormag_style', get_stylesheet_uri(), array(), COLORMAG_THEME_VERSION );
 			wp_style_add_data( 'colormag_style', 'rtl', 'replace' );
 
+			// Loads custom style.
+			wp_enqueue_style('custom_style', get_theme_file_uri('custom.css'));
+			wp_enqueue_style( 'jquery.bxslider', COLORMAG_CSS_URL . '/jquery.bxslider' . $suffix . '.css', array(), COLORMAG_THEME_VERSION );
+
+
 			// Load dark css.
 			if ( 'dark' === $skin_color ) {
 				wp_enqueue_style( 'colormag_dark_style', get_template_directory_uri() . '/dark.css', array(), COLORMAG_THEME_VERSION );
@@ -155,7 +160,9 @@ if ( ! class_exists( 'ColorMag_Enqueue_Scripts' ) ) {
 			wp_enqueue_script( 'colormag-skip-link-focus-fix', COLORMAG_JS_URL . '/skip-link-focus-fix' . $suffix . '.js', array(), COLORMAG_THEME_VERSION, true );
 
 			// Theme custom JS.
-			wp_enqueue_script( 'colormag-custom', COLORMAG_JS_URL . '/colormag-custom' . $suffix . '.js', array( 'jquery' ), COLORMAG_THEME_VERSION, true );
+			//wp_enqueue_script( 'colormag-custom', COLORMAG_JS_URL . '/colormag-custom' . $suffix . '.js', array( 'jquery' ), COLORMAG_THEME_VERSION, true );
+
+			wp_enqueue_script( 'colormag-custom', COLORMAG_JS_URL . '/colormag-custom'  . '.js', array( 'jquery' ), COLORMAG_THEME_VERSION, true );
 
 		}
 

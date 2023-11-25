@@ -92,6 +92,7 @@ if ( ! class_exists( 'ColorMag_After_Setup_Theme' ) ) {
 			// Pro required image sizes.
 			add_image_size( 'colormag-default-news', 150, 150, true );
 			add_image_size( 'colormag-featured-image-large', 1400, 600, true );
+			add_image_size('daong-featured-image', 1160, 420, true);
 
 			// Setup the WordPress core custom background feature.
 			add_theme_support(

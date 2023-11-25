@@ -275,11 +275,7 @@ jQuery( document ).ready(
 					auto           : true,
 					pause          : 5000,
 					adaptiveHeight : true,
-					nextText       : '',
-					prevText       : '',
-					nextSelector   : '.slide-next',
-					prevSelector   : '.slide-prev',
-					pager          : false,
+					pager          : true,
 					tickerHover    : true,
 					onSliderLoad   : function () {
 						jQuery( '.cm-slider-area-rotate' ).css( 'visibility', 'visible' );

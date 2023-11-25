@@ -13,24 +13,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header();
-
 // Do not display the front pages sidebar areas when the Page Builder Template is activated.
-if ( is_front_page() && ! is_page_template( 'page-templates/page-builder.php' ) && ( is_active_sidebar( 'colormag_front_page_area_beside_slider' ) ) && ( is_active_sidebar( 'colormag_front_page_slider_area' ) ) ) :
 	?>
-	<div class="cm-front-page-top-section">
-		<div class="cm-slider-area">
-			<?php
-				dynamic_sidebar( 'colormag_front_page_slider_area' );
-			?>
-		</div>
-
-		<div class="cm-beside-slider-widget">
-			<?php
-				dynamic_sidebar( 'colormag_front_page_area_beside_slider' );
-			?>
-		</div>
-	</div>
-<?php endif; ?>
 
 <div class="cm-row">
 	<?php

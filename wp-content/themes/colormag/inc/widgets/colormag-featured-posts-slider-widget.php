@@ -78,7 +78,7 @@ class colormag_featured_posts_slider_widget extends ColorMag_Widget {
 		?>
 
 		<div class="cm-featured-category-slider">
-			<?php $featured = 'colormag-featured-image'; ?>
+			<?php $featured = 'daong-featured-image'; ?>
 
 			<div class="cm-slider-area-rotate">
 				<?php
@@ -111,7 +111,7 @@ class colormag_featured_posts_slider_widget extends ColorMag_Widget {
 								colormag_colored_category();
 
 								// Displays the post title.
-								$this->the_title();
+								//$this->the_title();
 
 								// Displays the post meta.
 								$this->entry_meta();

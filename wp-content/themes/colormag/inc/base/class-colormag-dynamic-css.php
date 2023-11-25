@@ -284,6 +284,11 @@ class ColorMag_Dynamic_CSS {
 		$primary_menu_background         = get_theme_mod( 'colormag_primary_menu_background', $primary_menu_background_default );
 		$parse_css                      .= colormag_parse_background_css( $primary_menu_background_default, $primary_menu_background, '#cm-primary-nav, .cm-layout-2 #cm-primary-nav' );
 
+		$controlsImage = esc_url( get_parent_theme_file_uri( 'assets/img/controls.png' ));
+		$bxPrevCss = ".cm-featured-category-slider .bx-wrapper .bx-prev{background: url($controlsImage) 0 -32px no-repeat;}";
+		$parse_css .= $bxPrevCss;
+		$bxPrevCss = ".cm-featured-category-slider .bx-wrapper .bx-next{background: url($controlsImage) -43px -32px no-repeat;}";
+		$parse_css .= $bxPrevCss;
 		$daong_primary_menu_border_top_group_enable = get_theme_mod('daong_primary_menu_border_top_group_enable');
 		if (!$daong_primary_menu_border_top_group_enable) {
 			$daong_disable_top_border = array(

@@ -377,6 +377,21 @@ if ( ! function_exists( 'colormag_main_section_start' ) ) :
 	 */
 	function colormag_main_section_start() {
 		?>
+	<?php if ( is_front_page() && ! is_page_template( 'page-templates/page-builder.php' ) && ( is_active_sidebar( 'colormag_front_page_slider_area' ) ) ): ?>
+    	<div class="daong-slider-wrapper">
+            <div class="daong-slider">
+                <?php
+                    dynamic_sidebar( 'colormag_front_page_slider_area' );
+                ?>
+            </div>
+    <!---->
+    <!--		<div class="cm-beside-slider-widget">-->
+    <!--			--><?php
+    //				dynamic_sidebar( 'colormag_front_page_area_beside_slider' );
+    //			?>
+    <!--		</div>-->
+        </div>
+	<?php endif ?>
 	<div id="cm-content" class="cm-content">
 		<?php
 	}
