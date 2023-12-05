@@ -860,7 +860,7 @@ abstract class ColorMag_Widget extends WP_Widget {
 			array(
 				'categories',
 				'date',
-				'author',
+//				'author',
 				'tags',
 			);
 

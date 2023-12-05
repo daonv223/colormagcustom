@@ -275,6 +275,7 @@ function colormag_widgets_init() {
 	register_widget( 'colormag_728x90_advertisement_widget' );
 	register_widget( 'colormag_300x250_advertisement_widget' );
 	register_widget( 'colormag_125x125_advertisement_widget' );
+	register_widget('daong_featured_posts_widget');
 }
 
 add_action( 'widgets_init', 'colormag_widgets_init' );
@@ -329,3 +330,5 @@ require COLORMAG_WIDGETS_DIR . '/colormag-728x90-advertisement-widget.php';
 
 // Require file for TG: 728x90 Advertisement.
 require COLORMAG_WIDGETS_DIR . '/colormag-125x125-advertisement-widget.php';
+
+require COLORMAG_WIDGETS_DIR . '/daong-featured-posts-widget.php';

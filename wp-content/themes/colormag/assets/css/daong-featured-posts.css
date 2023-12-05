@@ -1,0 +1,78 @@
+.daong-featured-posts {
+    padding-bottom: 30px;
+}
+
+.daong-featured-posts-swiper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.daong-featured-posts .cm-widget-title {
+    text-align: center;
+    color: #194d7b;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.daong-featured-posts .cm-widget-title-2 {
+    color: #194d7b;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    background: url("icon_banhxephap.png") no-repeat 0 0;
+    background-size: 27px auto;
+    min-height: 27px;
+    padding: 3px 0 0 35px;
+    margin-bottom: 13px;
+    position: relative;
+}
+
+.daong-featured-posts .cm-widget-title-2:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    left: 110px;
+    height: 1px;
+    background: rgba(34,104,165,0.2)
+}
+
+.daong-featured-posts .cm-entry-title {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.daong-featured-posts .cm-widget-title:after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 20px;
+    margin: auto auto 20px;
+    background: url(icon_bgtt.png) no-repeat center center;
+    background-size: 100% auto
+}
+
+.daong-featured-posts-swiper .navigation {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+    text-align: center;
+    color: #2268a5;
+    transform: scale(0.6);
+    background: #fff;
+    line-height: 45px;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px -1px rgba(0,0,0,0.5);
+    top: var(--swiper-navigation-top-offset,30%)
+}
+
+.daong-featured-posts-swiper .navigation:after {
+    font-size: 26px;
+}
+
+.daong-featured-posts-swiper .navigation.swiper-button-disabled {
+    display: none;
+}

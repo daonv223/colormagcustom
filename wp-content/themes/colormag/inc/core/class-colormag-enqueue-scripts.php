@@ -79,7 +79,8 @@ if ( ! class_exists( 'ColorMag_Enqueue_Scripts' ) ) {
 
 			// Loads custom style.
 			wp_enqueue_style('custom_style', get_theme_file_uri('custom.css'));
-			wp_enqueue_style( 'jquery.bxslider', COLORMAG_CSS_URL . '/jquery.bxslider' . $suffix . '.css', array(), COLORMAG_THEME_VERSION );
+//			wp_enqueue_style( 'jquery.bxslider', COLORMAG_CSS_URL . '/jquery.bxslider' . $suffix . '.css', array(), COLORMAG_THEME_VERSION );
+			wp_enqueue_style( 'jquery.bxslider', COLORMAG_CSS_URL . '/jquery.bxslider' . '.css', array(), COLORMAG_THEME_VERSION );
 
 
 			// Load dark css.

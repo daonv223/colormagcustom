@@ -2704,11 +2704,9 @@ Styles for separating single posts loaded from ajax call.
 }
 
 .advertisement_728x90 img {
-	width: calc(100% - 50px);
+	width: 100%;
 	display: block;
-	-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-	padding: 24px 26px;
+	padding: 24px 0;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -3234,7 +3232,6 @@ Styles for separating single posts loaded from ajax call.
 
 .widget .wp-block-heading {
 	display: inline-block;
-	background-color: #207daf;
 	color: #fff;
 	font-size: 16px;
 	font-weight: 600;
@@ -3248,7 +3245,6 @@ Styles for separating single posts loaded from ajax call.
 .widget .block-title {
 	display: block;
 	margin-bottom: 20px;
-	border-bottom: 2px solid #207daf;
 }
 
 .widget select {
@@ -5231,9 +5227,7 @@ ul.wp-block-gallery img {
 }
 
 .cm-footer .cm-upper-footer-cols .widget {
-	background-color: #27272a;
 	border-radius: 4px;
-	padding: 12px;
 }
 
 .cm-footer .cm-upper-footer-cols .cm-entry-title a {

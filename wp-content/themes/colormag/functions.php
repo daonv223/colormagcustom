@@ -112,6 +112,7 @@ require COLORMAG_INCLUDES_DIR . '/class-colormag-svg-icons.php';
 require COLORMAG_PARENT_DIR . '/template-parts/hooks/hook-functions.php';
 
 require COLORMAG_PARENT_DIR . '/template-parts/hooks/header/header.php';
+require COLORMAG_PARENT_DIR . '/template-parts/hooks/header/custom-header.php';
 require COLORMAG_PARENT_DIR . '/template-parts/hooks/header/header-main.php';
 require COLORMAG_PARENT_DIR . '/template-parts/hooks/header/top-bar.php';
 
