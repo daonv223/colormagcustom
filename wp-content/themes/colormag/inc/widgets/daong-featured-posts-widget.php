@@ -135,13 +135,19 @@ class daong_featured_posts_widget extends ColorMag_Widget {
         ?>
         <script>
             const <?= $swiper ?> = new Swiper('#<?= $args['widget_id'] ?> .daong-featured-posts-swiper', {
-                slidesPerView: <?= $slidesPerView ?>,
-                spaceBetween: 30,
+                slidesPerView: 1,
+                spaceBetween: 10,
 
                 // Navigation arrows
                 navigation: {
                     nextEl: '#<?= $args['widget_id'] ?> .swiper-button-next',
                     prevEl: '#<?= $args['widget_id'] ?> .swiper-button-prev',
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: <?= $slidesPerView ?>,
+                        spaceBetween: 30
+                    }
                 }
             });
         </script>
